@@ -3,14 +3,17 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Contributing](#contributing)
+* [Launch](#launch)
+* [How to play](#Howtoplay)
 
 ## Introduction
 
-The starter project had some HTML and CSS styling given by Udacity, to display a static version of the Memory Game project. After adding a JavaScript file and modifying the HTML and CSS files, this project was converted from a static project to an interactive one. 
+This is a memory game project that I've done as part of my Nanodegree program in Udacity. The project is made using html, css and javascript. The base html and css was provided by Udacity and I have written the javascript code.
 
-## Contributing
+## Launch
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Just clone the project and open the index.html file on a browser. This project is tested on chrome browser and works on all kinds of screen sizes like, nexus5, ipad, desktop etc.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## How to play
+There are 16 cards facing down each containing an image. Pair of two cards contain the same image. A player can turn them around one at a time with maximum of two cards facing up. If the two cards match then they are locked in their face up position. If they don't match then the cards are faced down again. The player should remember the cards so that they can be matched when the other card is found. When the first card is turned up, time starts counting. When the 8 pairs of cards are matched, the game is finished and the timer stops. The players starts with 3 stars as their rating, and as they use more and more moves, their rating comes down.
+
