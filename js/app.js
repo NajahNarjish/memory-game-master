@@ -113,11 +113,11 @@ function openCard(card) {
             incrementMatched ();
         } 
 
-    }else if (cardArray.length === 3) {
+    } else if (cardArray.length === 3) {
          // *    + if the cards do not match, removing the cards from the list and hiding the card's symbol 
                 ifNotMatched();
 
-    }
+    }   
 
 }
 
@@ -134,7 +134,6 @@ function ifNotMatched() {
     cardArray[1].className  = "card";
     cardArray.splice(0,2);
 }
-
 
 moveCounter = 0;
 moveSpan.innerText = moveCounter;
