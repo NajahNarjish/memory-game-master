@@ -4,7 +4,7 @@
 
 * [Introduction](#introduction)
 * [Launch](#launch)
-* [How to play](#Howtoplay)
+* [How to play](#how-to-play)
 
 ## Introduction
 
