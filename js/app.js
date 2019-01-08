@@ -29,11 +29,13 @@ let firstClick;
 let firstCard;
 let secondCard;
 let second;
-const moveSpan = document.querySelector("span");
+const moveSpan = document.querySelector(".moves");
+const timeSpan = document.querySelector(".time");
 let moveCounter;
 const star1 = document.getElementById("star1");
 const star2 = document.getElementById("star2");
 let totalStar;
+let timeOut;
 
 // Displaying the cards on the page
  
@@ -138,8 +140,6 @@ moveCounter = 0;
 moveSpan.innerText = moveCounter;
 totalStar  = "3 stars";
 
-
-
 // events happen when the moves increment
 function moves () {
 	moveCounter++;
@@ -164,6 +164,8 @@ function incrementMatched () {
 	match += 2;
 
 	if (match === 16) {
+        // time stops when all cards are matched
+        clearTimeout(timeOut);
          // *    + if all cards have matched, display a message with the final score
 		showModal();
 	}
@@ -197,9 +199,11 @@ window.onclick = function(event) {
 
 // total time calculation in seconds
 second = 0;
+timeSpan.innerText = second;
 function timer(){
 	second++;
-	setTimeout (timer, 1000);
+    timeSpan.innerText = second;
+	timeOut = setTimeout (timer, 1000);
 }
 
 // funtion to reload the game
