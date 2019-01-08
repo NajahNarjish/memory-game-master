@@ -170,7 +170,7 @@ function incrementMatched () {
 	}
 }
 
-//the modal
+//the modal code from https://www.w3schools.com/howto/howto_css_modals.asp
 const modal = document.getElementById('myModal');
 
 //the <span> element that closes the modal
